@@ -1,4 +1,4 @@
-# Breadt Cancer Data Analysis
+# Breast Cancer Data Analysis
 Breast cancer is a cancer that develops from breast tissue. It occurs as a results of abnormal growth of cells in the breast tissue, commonly referred to as a Tumor. Not all tumors are harmful, it is classified as benign (non-cancerous) and malignant (cancerous) tumors. I carried out this data analysis on the given dataset , which includes measurements of breast cancer cells. Features that are computed from a digitized image of a fine needle aspirate (FNA) of a breast mass. They describe characteristics of the cell nuclei present in the image.
 
 Task that i caried out in the analysis are;
