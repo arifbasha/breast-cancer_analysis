@@ -7,6 +7,8 @@ Task that i caried out in the analysis are;
 3. Calculated the mean and median for smoothness and compactness fields for benign and malignant tumors
 4. Identified the important features using Exploratory Data Analysis
 5. Build 2 classification techniques using the important features
+
  a. Logistic Regression classification
+ 
  b. Random Forest Classification
 6. Calculated the accuracy of the model 
