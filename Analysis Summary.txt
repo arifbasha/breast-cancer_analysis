@@ -1,0 +1,55 @@
+#Analysis Summary 
+
+Given dataset has 32 attributes 
+
+Attribute Information:
+
+1) ID number 2) Diagnosis (M = malignant, B = benign) 
+3-32) Ten real-valued features are computed for each cell nucleus: 
+a. radius 
+b. texture 
+c. perimeter 
+d. area 
+e. smoothness 
+f. compactness 
+g. concavity 
+h. concave points 
+i. symmetry 
+j. fractal dimension
+
+The mean, standard error and worst of these features were computed for each image, resulting in 30 features. For instance, field 3 is Mean Radius, field 4 is Radius SE, field 5 is Worst Radius.
+
+Exploratory Data Analysis
+Techniques like histogram, distribution graphs, boxplot groupped by diagnosis field are used to identified the important attributes that correlates with the attribute Diagnosis that classifies the tumor type benign or malignant.
+
+Following are the important features identified for the model building:
+
+radius_mean
+smoothness_mean
+perimeter_mean
+fractal_dimension_mean
+
+Developed 2 Machine Learning model to classify the tumor;
+Splited the given datasets into 70% training and 30% testing sets.
+A. Logistic Regression Classification:
+	The probabilities describing the possible outcomes of a single trial are modelled using a logistic function. 
+Advantages: Logistic regression is designed for this purpose to classify the outcome, and is most useful for understanding the influence of several independent variables on a single outcome variable.
+
+Disadvantages: Works only when the predicted variable is binary, assumes all predictors are independent of each other, and assumes data is free of missing values. General disadvantage of regression technique is overfitting occurs frequently.
+
+Fitness of the Model: Accuracy of logistic regression classifier on test set is 0.90
+
+A. Random Forest:
+	Random forest classifier is a meta-estimator that fits a number of decision trees on various sub-samples of datasets and uses average to improve the predictive accuracy of the model and controls over-fitting.
+
+Advantages: Reduction in over-fitting and random forest classifier is more accurate than decision trees in most cases.
+
+Disadvantages: Slow real time prediction, difficult to implement, and complex algorithm.
+
+Fitness of the Model: Accuracy of Random Forest classifier on test set is 0.9259
+
+ 
+
+#Limitation of this analysis 
+
+Given dataset has 357 benign tumors and 212 malignant tumors, on creation of 70% training dataset there is a chance of minority sampling of malignant tumors to overcome it i have used SMOTE technique but for more accuracy we need more data samples related to malignant tumors.
